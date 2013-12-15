@@ -17,8 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //Tes comments
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
