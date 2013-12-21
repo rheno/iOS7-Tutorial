@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D889CB53185DA298003233FC /* SimpleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D889CB52185DA298003233FC /* SimpleCollectionViewController.m */; };
 		D889CB55185DA473003233FC /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = D889CB54185DA473003233FC /* download.png */; };
+		D88C8BD5186559B20043B6E1 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C8BD4186559B20043B6E1 /* HTTPRequest.m */; };
 		D8CE5118185D9C5C00C37BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CE5117185D9C5C00C37BAB /* Foundation.framework */; };
 		D8CE511A185D9C5C00C37BAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CE5119185D9C5C00C37BAB /* CoreGraphics.framework */; };
 		D8CE511C185D9C5C00C37BAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CE511B185D9C5C00C37BAB /* UIKit.framework */; };
@@ -40,6 +41,9 @@
 		D889CB51185DA298003233FC /* SimpleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCollectionViewController.h; sourceTree = "<group>"; };
 		D889CB52185DA298003233FC /* SimpleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCollectionViewController.m; sourceTree = "<group>"; };
 		D889CB54185DA473003233FC /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = download.png; path = Images/download.png; sourceTree = "<group>"; };
+		D88C8BD2186550FC0043B6E1 /* HTTPRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPRequestDelegate.h; sourceTree = "<group>"; };
+		D88C8BD3186559B20043B6E1 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		D88C8BD4186559B20043B6E1 /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
 		D8CE5114185D9C5C00C37BAB /* Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8CE5117185D9C5C00C37BAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8CE5119185D9C5C00C37BAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D88C8BD1186550D10043B6E1 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D88C8BD2186550FC0043B6E1 /* HTTPRequestDelegate.h */,
+				D88C8BD3186559B20043B6E1 /* HTTPRequest.h */,
+				D88C8BD4186559B20043B6E1 /* HTTPRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
 		D8CE510B185D9C5C00C37BAB = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +133,7 @@
 		D8CE511D185D9C5C00C37BAB /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				D88C8BD1186550D10043B6E1 /* Request */,
 				D8CE5126185D9C5C00C37BAB /* AppDelegate.h */,
 				D8CE5127185D9C5C00C37BAB /* AppDelegate.m */,
 				D8CE5129185D9C5C00C37BAB /* Main_iPhone.storyboard */,
@@ -265,6 +280,7 @@
 				D889CB53185DA298003233FC /* SimpleCollectionViewController.m in Sources */,
 				D8CE5131185D9C5C00C37BAB /* ViewController.m in Sources */,
 				D8CE5128185D9C5C00C37BAB /* AppDelegate.m in Sources */,
+				D88C8BD5186559B20043B6E1 /* HTTPRequest.m in Sources */,
 				D8CE5124185D9C5C00C37BAB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

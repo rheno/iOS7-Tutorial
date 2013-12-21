@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTTPRequestDelegate.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<HTTPRequestDelegate>
 
 @end
